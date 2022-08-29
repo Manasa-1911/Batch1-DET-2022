@@ -4,21 +4,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleAppDemo
+namespace Batch1_DET_2022
 {
-    internal class Circle
+    internal class circle
     {
-        int radius;
+        double radius;
 
-        public Circle(int radius)
+        public void SetRadius(int radius)
         {
             this.radius = radius;
         }
 
-        public double area()
+        public double GetRadius()
+        {
+            return radius;
+        }
+
+        public double calcDiameter()
+        {
+            return 2 * radius;
+        }
+
+        public double Calcarea()
 
         {
             return Math.PI * radius * radius;
         }
     }
 }
+    

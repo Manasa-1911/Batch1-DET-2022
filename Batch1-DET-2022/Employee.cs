@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleAppDemo
+namespace Batch1_DET_2022
 {
     internal class Employee
     {
+
         int rollno;
         string name;
         string address;
@@ -24,7 +25,7 @@ namespace ConsoleAppDemo
             this.pincode = pincode;
             this.phoneno = phoneno;
             this.grosssal = grosssal;
-            
+
         }
 
         public int GetEmpNetSalary()
@@ -32,8 +33,8 @@ namespace ConsoleAppDemo
             pf = 12 * grosssal / 100;
             int netsalary = grosssal - pf;
             return netsalary;
-        } 
-        
+        }
+
         public char GetEmpGrade()
         {
 
@@ -52,3 +53,4 @@ namespace ConsoleAppDemo
         }
     }
 }
+
