@@ -6,87 +6,90 @@ using Batch1_DET_2022;
 class MyClass
 {
 
-   
-        /* try
-         {
-             Empp m = new Manager(4671, "Karthika", new DateTime(2005, 5, 10), "techtrng", 10);  //default constructor
-                                                                                                 // Console.WriteLine(m.Print());
 
-             Empp m1 = new Manager(2345, "Jeeva", new DateTime(2010, 1, 14), "PEMS", 450);
-             // Console.WriteLine(m1.Print());  //base class ref can point to derived object
+    /* try
+     {
+         Empp m = new Manager(4671, "Karthika", new DateTime(2005, 5, 10), "techtrng", 10);  //default constructor
+                                                                                             // Console.WriteLine(m.Print());
 
-             Empp e1 = new Empp(1, "Jiyana", new DateTime(2020, 1, 5));
-             //Console.WriteLine(e1.Print());
+         Empp m1 = new Manager(2345, "Jeeva", new DateTime(2010, 1, 14), "PEMS", 450);
+         // Console.WriteLine(m1.Print());  //base class ref can point to derived object
 
-             Console.WriteLine("enter empid b.w 1001 - 25000");
-             int id = Convert.ToInt32(Console.ReadLine());
-             if (id < 1001 || id > 25000)
-                 throw new InvalidEmpIdException("Entered empid is not in the range...");
+         Empp e1 = new Empp(1, "Jiyana", new DateTime(2020, 1, 5));
+         //Console.WriteLine(e1.Print());
 
-             Console.WriteLine("enter emp name");
-             string name = Console.ReadLine();
+         Console.WriteLine("enter empid b.w 1001 - 25000");
+         int id = Convert.ToInt32(Console.ReadLine());
+         if (id < 1001 || id > 25000)
+             throw new InvalidEmpIdException("Entered empid is not in the range...");
 
-             Console.WriteLine("enter doj");
-             DateTime doj = DateTime.Parse(Console.ReadLine());
+         Console.WriteLine("enter emp name");
+         string name = Console.ReadLine();
 
-             Empp e2 = new(id, name, doj);
+         Console.WriteLine("enter doj");
+         DateTime doj = DateTime.Parse(Console.ReadLine());
 
-
-             List<Empp> list = new List<Empp>();
-             list.Add(m);
-             list.Add(m1);
-             list.Add(e1);
-             foreach (Empp x in list)
-                 Console.WriteLine(x.Print());
-         }
-         catch (InvalidEmpIdException e)
-         {
-             Console.WriteLine(e.Message);
-         }
-         catch (Exception e)
-         { }*/
+         Empp e2 = new(id, name, doj);
 
 
+         List<Empp> list = new List<Empp>();
+         list.Add(m);
+         list.Add(m1);
+         list.Add(e1);
+         foreach (Empp x in list)
+             Console.WriteLine(x.Print());
+     }
+     catch (InvalidEmpIdException e)
+     {
+         Console.WriteLine(e.Message);
+     }
+     catch (Exception e)
+     { }*/
 
 
 
-        //    try
-        //    {
-        //        Console.WriteLine("Enter your age");
-        //        int age = int.Parse(Console.ReadLine());
-
-        //        if (age < 0 || age > 120)
-        //            throw new InvalidAgeException("Enter correct age");
-
-        //    }
-
-        //    catch (Exception e)
-        //    {
-        //        Console.WriteLine(e.Message);
-        //    }
 
 
-        //}
+    //    try
+    //    {
+    //        Console.WriteLine("Enter your age");
+    //        int age = int.Parse(Console.ReadLine());
 
-        //List<Animal> animal = new List<Animal>();
-        //animal.Add(new Dog());
-        //animal.Add(new Cat());
+    //        if (age < 0 || age > 120)
+    //            throw new InvalidAgeException("Enter correct age");
 
-        //foreach (Animal a in animal)
-        //    Console.WriteLine(a.ToString());
+    //    }
+
+    //    catch (Exception e)
+    //    {
+    //        Console.WriteLine(e.Message);
+    //    }
+
+
+    //}
+    public static void Main()
+    {
+        List<Animal> animal = new List<Animal>();
+        animal.Add(new Dog());
+        animal.Add(new Cat());
+
+        foreach (Animal a in animal)
+            Console.WriteLine(a.ToString());
 
         //PersonDOB p = new PersonDOB();
         //Console.WriteLine(p.DOB(08/06/2023));
-         public static Student Student { get; private set; }
+        //public static Student Student { get; private set; }
 
-    public static void Main()
-    {
-        ScienceStudent Student = new ScienceStudent { regno = 24, Name = "Manasa" };
-        ScienceStudent sciencesubject = new ScienceStudent { physics = 60, chemistry = 85, maths = 90 };
-        CommerceStudent Commercessubject = new CommerceStudent { economices = 65, accounts = 75, banking = 80 };
+        //public static void Main()
+        //{
+        //    ScienceStudent Student = new ScienceStudent { regno = 24, Name = "Manasa" };
+        //    ScienceStudent sciencesubject = new ScienceStudent { physics = 60, chemistry = 85, maths = 90 };
+        //    CommerceStudent Commercessubject = new CommerceStudent { economices = 65, accounts = 75, banking = 80 };
 
-        Console.WriteLine(sciencesubject.GetAvgMarks());
-        Console.WriteLine(Commercessubject.GetAvgMarks());
+        //    Console.WriteLine(Student.ToString());
+        //    Console.WriteLine($"The Average marks of Science subjects {sciencesubject.GetAvgMarks()}");
+        //    Console.WriteLine($"The average marks of Commerce Subjects {Commercessubject.GetAvgMarks()}");
+        //}
     }
 }
 
