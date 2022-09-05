@@ -69,12 +69,38 @@ class MyClass
     //}
     public static void Main()
     {
-        List<Animal> animal = new List<Animal>();
-        animal.Add(new Dog());
-        animal.Add(new Cat());
+        //public GetListofEmployees()
+        //{
+        //    List<EmployeeLinq> emps = new List<EmployeeLinq>();
+        //    emps.Add(new EmployeeLinq(1, "John", "Training"));
+        //    emps.Add(new EmployeeLinq(2, "Mark", "Finance"));
+        //    emps.Add(new EmployeeLinq(3, "Peter", "Technical"));
+        //    emps.Add(new EmployeeLinq(4, "Bob", "Technical"));
+        //    emps.Add(new EmployeeLinq(5, "Robert", "Finance"));
+        //    emps.Add(new EmployeeLinq(6, "Jason", "Training"));
 
-        foreach (Animal a in animal)
-            Console.WriteLine(a.ToString());
+        //    return emps;
+        //}
+
+        // static void SampleEmployeeList()
+        //{
+        //    List<EmployeeLinq> emps = GetListOfEmployees();
+        //    var emp_query = from employee in emps
+        //                    select employee;
+
+        //    foreach (var item in emp_query)
+        //    {
+        //        Console.WriteLine("Name is " + item.Name + "and dept is " + item.Dept);
+        //    }
+        //    Console.ReadLine();
+        //}
+
+        //List<Animal> animal = new List<Animal>();
+        //animal.Add(new Dog());
+        //animal.Add(new Cat());
+
+        //foreach (Animal a in animal)
+        //    Console.WriteLine(a.ToString());
 
         //PersonDOB p = new PersonDOB();
         //Console.WriteLine(p.DOB(08/06/2023));
