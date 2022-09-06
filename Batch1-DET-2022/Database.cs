@@ -246,15 +246,32 @@ namespace Batch1_DET_2022
 
 
 
-        //private static void InsertEmployeeDetails()
-        //{
-        //    var ctx=new trainingContext();
-        //    try
-        //    {
-        //        var employees = ctx.Emps.FromSqlRaw("insertemp");
+        private static void InsertEmployeeDetails()
+        {
+            var ctx = new trainingContext();
+            try
+            {
+                var empno = 2345;
+                string name = "Manasa";
+                string job = "Analyst";
+                var mgr = 7839;
+                var hiredate = "09/06/2022";
+                var sal = 40000;
+                var comm = 200;
+                var deptno = 20;
+               
+                var employees = ctx.Database.ExecuteSqlRaw("insertempval @p0,@p1,@p2,@p3,@p4,@p5,@p6,@p7", empno, name,job,mgr,hiredate,sal,comm,deptno);
+                Console.WriteLine(employees);
 
-        //    }
-        //}
+            }
+
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.InnerException.Message);
+            }
+
+        }
+        }
 
 
 
@@ -275,5 +292,5 @@ namespace Batch1_DET_2022
         //    }
         //}
     }
-}
+
 
